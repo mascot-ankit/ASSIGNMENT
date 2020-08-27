@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="flightpath.css" />
+		<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&libraries=geometry"></script>
+		<script src="flightpath.js"></script>
+	</head>
+	<body>
+		<div class="controls">
+			<select id="s_from">
+				<option value="london">LONDON</option>
+				<option value="paris">PARIS</option>
+				<option value="newyork">NEW YORK</option>
+			</select> to
+			<select id="s_to">
+				<option value="ambala">AMBALA</option>
+				<option value="bhubneshwar">BHUBNESHWAR</option>
+				<option value="bangalore">BANGALORE</option>
+			</select>
+			<input id="clickMe" type="button" value="LAUNCH RAFALE" onclick="go();" />
+		</div>
+		<h1>RAFALE SUCCESSFULLY DELIVERED TO INDIA</h1>
+		<div id="mapCanvas" class="map"></div>
+		<script type="text/javascript">loadMap();</script>
+	</body>
+</html>
